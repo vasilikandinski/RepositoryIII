@@ -1,18 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Lista de Tareas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+    h3 {
+      color: #666;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
 </head>
-
 <body>
-    <div>
-        <h1>Hola mundo</h1>
-        <p> Bienvenido a mi primera aplicación de flask, </p>
-        <p> durante el desarrollo de la misma nos la pasaremos muy bien. </p>
-    </div>
+  <h1>Mi Lista de Tareas</h1>
+  
+  <h3>Pendientes</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Acabar Programación Avanzada</td>
+        <td>Necesito terminar todos los temas.</td>
+        <td><button>Mover a "En proceso"</button></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h3>En proceso</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Evaluar a estudiantes</td>
+        <td>Le están echando ganas.</td>
+        <td><button>Mover a "Finalizado"</button></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <h3>Finalizado</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Acción</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Desayunar</td>
+        <td>Si tan solo alguien me invitara a desayunar.</td>
+        <td><button>Eliminar</button></td> 
+      </tr>
+    </tbody>
+  </table>
 </body>
-
 </html>
